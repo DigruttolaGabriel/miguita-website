@@ -5,3 +5,13 @@
     margin: 0;
     padding: 0;
 }
+
+$background-colors: (
+    "bg-light-red": $color-light-red,
+);
+
+@each $name, $color in $background-colors {
+    .#{$name} {
+      background-color: $color;
+    }
+  }
