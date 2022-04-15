@@ -11,6 +11,7 @@ $background-colors: (
   "bg-black": $color-black,
   "bg-light-grey": $color-light-grey,
   "bg-grey": $color-grey,
+  "bg-special-grey": $color-special-grey,
   "bg-dark-grey": $color-dark-grey,
   "bg-yellow": $color-yellow,
   "bg-light-red": $color-light-red,
@@ -21,6 +22,7 @@ $text-colors: (
   "text-black": $color-black,
   "text-light-grey": $color-light-grey,
   "text-grey": $color-grey,
+  "text-special-grey": $color-special-grey,
   "text-dark-grey": $color-dark-grey,
   "text-yellow": $color-yellow,
   "text-light-red": $color-light-red,
@@ -35,6 +37,12 @@ $fonts: (
         "Poppins",
         sans-serif
     ),
+);
+
+$font-sizes: (
+    "size-14": 14px,
+    "size-18": 18px,
+    "size-36": 36px,
 );
 
 @each $name, $color in $background-colors {
@@ -55,6 +63,16 @@ $fonts: (
   }
 }
 
+@each $name, $size in $font-sizes {
+  .#{$name} {
+      font-size: $size;
+  }
+}
+
+nav {
+  position: relative !important;
+}
+
 .top-navbar {
   height: 40px;
   font-size: 14px;
@@ -66,10 +84,6 @@ $fonts: (
   span {
     color: $color-white !important;
     padding-right: 0.5rem;
-
-    img {
-      padding-right: 0.5rem;
-    }
 
     a {
       color: inherit;
@@ -85,5 +99,19 @@ $fonts: (
   
   li {
     padding: 0px 10px;
+  }
+}
+
+.initial-section {
+  padding-top: 50px;
+}
+
+footer {
+  a {
+    color: $color-white;
+
+    &:hover {
+      color: $color-light-grey;
+    }
   }
 }
