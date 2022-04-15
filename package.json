@@ -20,5 +20,8 @@
   "homepage": "https://github.com/DigruttolaGabriel/miguita-website#readme",
   "dependencies": {
     "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
   }
 }
