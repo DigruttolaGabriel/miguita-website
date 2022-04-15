@@ -98,3 +98,18 @@ footer a {
   color: #FFFFFF; }
   footer a:hover {
     color: #999999; }
+
+.accordion-button {
+  background-image: url(""); }
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: #FFFFFF; }
+  .accordion-button:not(.collapsed) {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #525252;
+    box-shadow: none; }
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("../img/down-arrow-icon.svg"); }
+  .accordion-button::after {
+    background-image: url("../img/down-arrow-icon.svg"); }

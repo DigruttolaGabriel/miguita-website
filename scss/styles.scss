@@ -116,3 +116,29 @@ footer {
     }
   }
 }
+
+////////////////// BOOTSTRAP 5
+
+.accordion-button {
+  background-image: url("");
+
+  &:focus {
+    box-shadow: none;
+    border-color: $color-white;
+  }
+
+  &:not(.collapsed) {
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-special-grey;
+    box-shadow: none;
+
+    &::after {
+      background-image: url("../img/down-arrow-icon.svg");
+    }
+  }
+
+  &::after {
+    background-image: url("../img/down-arrow-icon.svg");
+  }
+}
