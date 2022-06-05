@@ -26,6 +26,7 @@ $text-colors: (
   "text-dark-grey": $color-dark-grey,
   "text-yellow": $color-yellow,
   "text-light-red": $color-light-red,
+  "text-light-green": $color-light-green,
 );
 
 $fonts: (
@@ -41,6 +42,7 @@ $fonts: (
 
 $font-sizes: (
     "size-14": 14px,
+    "size-16": 16px,
     "size-18": 18px,
     "size-24": 24px,
     "size-36": 36px,
@@ -105,6 +107,14 @@ nav {
 
 .initial-section {
   padding-top: 50px;
+}
+
+.special-button {
+  color: $color-dark-grey;
+  background-color: $color-yellow;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  padding: 10px 35px 10px 35px;
 }
 
 footer {
