@@ -44,6 +44,7 @@ $font-sizes: (
     "size-14": 14px,
     "size-16": 16px,
     "size-18": 18px,
+    "size-20": 20px,
     "size-24": 24px,
     "size-36": 36px,
 );
@@ -115,6 +116,11 @@ nav {
   border-radius: 10px 10px 10px 10px;
   border: none;
   padding: 10px 35px 10px 35px;
+}
+
+.shadow-card {
+  box-shadow: 0px 4px 5px $color-light-grey;
+  border-radius: 0px 0px 10px 10px;
 }
 
 footer {

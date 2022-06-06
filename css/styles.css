@@ -69,6 +69,9 @@
 .size-18 {
   font-size: 18px; }
 
+.size-20 {
+  font-size: 20px; }
+
 .size-24 {
   font-size: 24px; }
 
@@ -106,6 +109,10 @@ nav {
   border-radius: 10px 10px 10px 10px;
   border: none;
   padding: 10px 35px 10px 35px; }
+
+.shadow-card {
+  box-shadow: 0px 4px 5px #999999;
+  border-radius: 0px 0px 10px 10px; }
 
 footer a {
   color: #FFFFFF; }
