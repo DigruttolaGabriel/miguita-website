@@ -124,6 +124,7 @@ nav {
 }
 
 footer {
+  margin-top: 88px;
   a {
     color: $color-white;
 
@@ -131,6 +132,12 @@ footer {
       color: $color-light-grey;
     }
   }
+}
+
+#footer-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 ////////////////// BOOTSTRAP 5
