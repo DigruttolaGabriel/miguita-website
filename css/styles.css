@@ -114,10 +114,17 @@ nav {
   box-shadow: 0px 4px 5px #999999;
   border-radius: 0px 0px 10px 10px; }
 
-footer a {
-  color: #FFFFFF; }
-  footer a:hover {
-    color: #999999; }
+footer {
+  margin-top: 88px; }
+  footer a {
+    color: #FFFFFF; }
+    footer a:hover {
+      color: #999999; }
+
+#footer-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 .accordion-button {
   background-image: url(""); }
