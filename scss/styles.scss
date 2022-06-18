@@ -46,7 +46,9 @@ $font-sizes: (
     "size-18": 18px,
     "size-20": 20px,
     "size-24": 24px,
+    "size-32": 32px,
     "size-36": 36px,
+    "size-64": 64px,
 );
 
 @each $name, $color in $background-colors {
@@ -72,6 +74,42 @@ $font-sizes: (
       font-size: $size;
   }
 }
+
+@mixin bg-image($url) {
+  background-image: url($url);
+}
+
+////////////////// GENERAL //////////////////
+
+body {
+  font-family: map-get($fonts, "font-poppins");
+}
+
+.initial-section {
+  padding-top: 50px;
+}
+
+.title-bg-image {
+  @include bg-image("../img/titles-background.jpg")
+}
+
+.special-button {
+  color: $color-dark-grey;
+  background-color: $color-yellow;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  padding: 10px 35px 10px 35px;
+}
+
+.pt-5rem {
+  padding-top: 5rem;
+}
+
+.pb-5rem {
+  padding-bottom: 5rem;
+}
+
+////////////////// NAVBAR //////////////////
 
 nav {
   position: relative !important;
@@ -106,26 +144,45 @@ nav {
   }
 }
 
-.initial-section {
-  padding-top: 50px;
+////////////////// INDEX //////////////////
+
+#corousel-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
 }
 
-.title-bg-image {
-  background-image: url("../img/fondo productos miguita_titulares.jpg");
+#home-products-bg-image {
+  @include bg-image("../img/home-products-background.png")
 }
 
-.special-button {
-  color: $color-dark-grey;
-  background-color: $color-yellow;
-  border-radius: 10px 10px 10px 10px;
-  border: none;
-  padding: 10px 35px 10px 35px;
+#home-whatsapp-bg-image {
+  @include bg-image("../img/home-banner-whatsapp.jpg")
 }
+
+#home-email-bg-image {
+  @include bg-image("../img/home-banner-email.jpg")
+}
+
+////////////////// PRODUCTS //////////////////
+
+
+////////////////// CONTACT //////////////////
 
 .shadow-card {
   box-shadow: 0px 4px 5px $color-light-grey;
   border-radius: 0px 0px 10px 10px;
 }
+
+////////////////// ABOUT-US //////////////////
+
+
+////////////////// FAQ //////////////////
+
+
+////////////////// FOOTER //////////////////
 
 footer {
   margin-top: 88px;
@@ -138,13 +195,15 @@ footer {
   }
 }
 
-#footer-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+@media screen and (min-height: 900px) {
+  #footer-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
-////////////////// BOOTSTRAP 5
+////////////////// BOOTSTRAP 5 //////////////////
 
 .accordion-button {
   background-image: url("");
