@@ -106,6 +106,12 @@ body {
 .pb-5rem {
   padding-bottom: 5rem; }
 
+#scrolling-whatsapp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 20; }
+
 nav {
   position: relative !important; }
 
