@@ -75,8 +75,42 @@
 .size-24 {
   font-size: 24px; }
 
+.size-32 {
+  font-size: 32px; }
+
 .size-36 {
   font-size: 36px; }
+
+.size-64 {
+  font-size: 64px; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+.initial-section {
+  padding-top: 50px; }
+
+.title-bg-image {
+  background-image: url("../img/titles-background.jpg"); }
+
+.special-button {
+  color: #333333;
+  background-color: #FCCE45;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  padding: 10px 35px 10px 35px; }
+
+.pt-5rem {
+  padding-top: 5rem; }
+
+.pb-5rem {
+  padding-bottom: 5rem; }
+
+#scrolling-whatsapp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 20; }
 
 nav {
   position: relative !important; }
@@ -100,15 +134,21 @@ nav {
   .principal-navbar li {
     padding: 0px 10px; }
 
-.initial-section {
-  padding-top: 50px; }
+#corousel-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%); }
 
-.special-button {
-  color: #333333;
-  background-color: #FCCE45;
-  border-radius: 10px 10px 10px 10px;
-  border: none;
-  padding: 10px 35px 10px 35px; }
+#home-products-bg-image {
+  background-image: url("../img/home-products-background.png"); }
+
+#home-whatsapp-bg-image {
+  background-image: url("../img/home-banner-whatsapp.jpg"); }
+
+#home-email-bg-image {
+  background-image: url("../img/home-banner-email.jpg"); }
 
 .shadow-card {
   box-shadow: 0px 4px 5px #999999;
@@ -121,10 +161,11 @@ footer {
     footer a:hover {
       color: #999999; }
 
-#footer-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
+@media screen and (min-height: 900px) {
+  #footer-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%; } }
 
 .accordion-button {
   background-image: url(""); }
