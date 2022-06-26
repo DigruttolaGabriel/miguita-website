@@ -150,6 +150,20 @@ nav {
 #home-email-bg-image {
   background-image: url("../img/home-banner-email.jpg"); }
 
+.presentation-button {
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px 15px 5px 15px;
+  color: #999999;
+  border: 2px solid #999999; }
+
+.presentation-button-selected {
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px 15px 5px 15px;
+  color: #000000;
+  border: 2px solid #F74F58; }
+
 .shadow-card {
   box-shadow: 0px 4px 5px #999999;
   border-radius: 0px 0px 10px 10px; }

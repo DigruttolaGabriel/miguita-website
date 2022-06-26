@@ -79,6 +79,12 @@ $font-sizes: (
   background-image: url($url);
 }
 
+@mixin presentation-button {
+  background-color: $color-white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px 15px 5px 15px;
+}
+
 ////////////////// GENERAL //////////////////
 
 body {
@@ -175,6 +181,17 @@ nav {
 
 ////////////////// PRODUCTS //////////////////
 
+.presentation-button {
+  @include presentation-button;
+  color: $color-light-grey;
+  border: 2px solid $color-light-grey;
+}
+
+.presentation-button-selected {
+  @include presentation-button;
+  color: $color-black;
+  border: 2px solid $color-light-red;
+}
 
 ////////////////// CONTACT //////////////////
 
