@@ -1,6 +1,4 @@
-
-
-function skere(event) {
+function changeGratedBreadPresentationImage(event) {
     const buttons = $("#grated-bread-presentation-buttons button")
     
     buttons.removeClass()
@@ -16,8 +14,33 @@ function skere(event) {
 
     if (event.target.id === "big-grated-bread-button")
         $("#product-rallado").attr("src","../img/grated-bread-25kg.png");
+
+    $(".grated-bread-secondary-image").eq("0").attr("src", "../img/grated-bread-secondary-one.jpg");
+    $(".grated-bread-secondary-image").eq("1").attr("src", "../img/grated-bread-secondary-two.jpg");
 }
 
-$("#small-grated-bread-button").on("click", skere);
-$("#medium-grated-bread-button").on("click", skere);
-$("#big-grated-bread-button").on("click", skere);
+function changeCrumbBreadImage(event) {
+    const ppalImage = $("#product-miga").attr("src");
+    $("#product-miga").attr("src", $(event.target).attr("src"));
+    $(event.target).attr("src", ppalImage);
+}
+
+function changeGratedBreadImage(event) {
+    const ppalImage = $("#product-rallado").attr("src");
+    $("#product-rallado").attr("src", $(event.target).attr("src"));
+    $(event.target).attr("src", ppalImage);
+}
+
+function changeArabicBreadImage(event) {
+    const ppalImage = $("#product-arabe").attr("src");
+    $("#product-arabe").attr("src", $(event.target).attr("src"));
+    $(event.target).attr("src", ppalImage);
+}
+
+$("#small-grated-bread-button").on("click", changeGratedBreadPresentationImage);
+$("#medium-grated-bread-button").on("click", changeGratedBreadPresentationImage);
+$("#big-grated-bread-button").on("click", changeGratedBreadPresentationImage);
+
+$(".crumb-bread-secondary-image").on("click", changeCrumbBreadImage);
+$(".grated-bread-secondary-image").on("click", changeGratedBreadImage);
+$(".arabic-bread-secondary-image").on("click", changeArabicBreadImage);
