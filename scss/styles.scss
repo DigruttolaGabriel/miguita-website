@@ -77,6 +77,9 @@ $font-sizes: (
 
 @mixin bg-image($url) {
   background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @mixin presentation-button {
