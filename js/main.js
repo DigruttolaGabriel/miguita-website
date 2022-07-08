@@ -7,16 +7,16 @@ function changeGratedBreadPresentationImage(event) {
     event.target.className = "presentation-button-selected fw-bold me-2"
 
     if (event.target.id === "small-grated-bread-button")
-        $("#product-rallado").attr("src","../img/grated-bread-400gr.png");
+        $("#product-rallado").attr("src","./img/grated-bread-400gr.png");
 
     if (event.target.id === "medium-grated-bread-button")
-        $("#product-rallado").attr("src","../img/grated-bread-5kg.png");
+        $("#product-rallado").attr("src","./img/grated-bread-5kg.png");
 
     if (event.target.id === "big-grated-bread-button")
-        $("#product-rallado").attr("src","../img/grated-bread-25kg.png");
+        $("#product-rallado").attr("src","./img/grated-bread-25kg.png");
 
-    $(".grated-bread-secondary-image").eq("0").attr("src", "../img/grated-bread-secondary-one.jpg");
-    $(".grated-bread-secondary-image").eq("1").attr("src", "../img/grated-bread-secondary-two.jpg");
+    $(".grated-bread-secondary-image").eq("0").attr("src", "./img/grated-bread-secondary-one.jpg");
+    $(".grated-bread-secondary-image").eq("1").attr("src", "./img/grated-bread-secondary-two.jpg");
 }
 
 function changeCrumbBreadImage(event) {

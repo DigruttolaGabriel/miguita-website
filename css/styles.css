@@ -91,7 +91,10 @@ body {
   padding-top: 50px; }
 
 .title-bg-image {
-  background-image: url("../img/titles-background.jpg"); }
+  background-image: url("../img/titles-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .special-button {
   color: #333333;
@@ -142,13 +145,22 @@ nav {
   transform: translate(-50%, -50%); }
 
 #home-products-bg-image {
-  background-image: url("../img/home-products-background.png"); }
+  background-image: url("../img/home-products-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 #home-whatsapp-bg-image {
-  background-image: url("../img/home-banner-whatsapp.jpg"); }
+  background-image: url("../img/home-banner-whatsapp.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 #home-email-bg-image {
-  background-image: url("../img/home-banner-email.jpg"); }
+  background-image: url("../img/home-banner-email.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .presentation-button {
   background-color: #FFFFFF;
